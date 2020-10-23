@@ -7,7 +7,7 @@ public class MatrixAnalyzer {
     private static final int HIGH = 10;
 
     /// <Summary>
-    /// Генерация случайных значений в диапазоне и заполнение ими маатрицы
+    /// Generate random value in matrix
     /// </Summary
     private static int[][] randomGenerate(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
@@ -20,7 +20,7 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Ручное заполнение матрицы
+    /// Manual filling of matrix
     /// </Summary
     private static int[][] manualFilling(int[][] matrix) {
         Scanner scanFillingMatrix = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Вывод матрицы на экран
+    /// Print matrix on screen
     /// </Summary
     private static void printMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
@@ -47,7 +47,7 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Поиск максимального значения матрицы
+    /// Find max value
     /// </Summary
     private static int maxValue(int[][] matrix) {
         int max = matrix[0][0];
@@ -63,7 +63,7 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Поиск минимального значения матрицы
+    /// Find min value
     /// </Summary
     private static int minValue(int[][] matrix) {
         int min = matrix[0][0];
@@ -79,7 +79,7 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Среднее арифметическое значений матрицы
+    /// Find arithmetical mean
     /// </Summary
     private static double arithmeticalMean(int[][] matrix) {
         int sum = 0;
@@ -96,7 +96,7 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Среднее геометрическое значений матрицы
+    /// Find geometric mean
     /// </Summary
     private static double geometricMean(int[][] matrix) {
         int product = 1;
@@ -113,19 +113,19 @@ public class MatrixAnalyzer {
     }
 
     /// <Summary>
-    /// Точка запуска
+    /// Start point
     /// </Summary
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("\nВведите высоту: ");
+        System.out.print("\nEnter height: ");
         int matrixHeight = scan.nextInt();
 
-        System.out.print("Введите ширину: ");
+        System.out.print("Enter width: ");
         int matrixWidth = scan.nextInt();
 
         int[][] matrix = new int[matrixHeight][matrixWidth];
 
-        System.out.print("Заполнение (рандом/ручное): ");
+        System.out.print("Choose what u wanna (random - 0 | manual - 1): ");
         int choose = scan.nextInt();
 
         switch (choose) {
@@ -137,14 +137,14 @@ public class MatrixAnalyzer {
                 matrix = manualFilling(matrix);
                 break;
             default:
-                System.out.println("Вариант отсутствует!");
+                System.out.println("Oooops... Houston, we have a problem!");
         }
 
         printMatrix(matrix);
 
-        System.out.println("Максимальный элемент: " + maxValue(matrix));
-        System.out.println("Минимальный элемент: " + minValue(matrix));
-        System.out.println("Среднее арифметическое: " + arithmeticalMean(matrix));
-        System.out.println("Среднее геометрическое: " + geometricMean(matrix));
+        System.out.println("Max value: " + maxValue(matrix));
+        System.out.println("Min value: " + minValue(matrix));
+        System.out.println("СMean arithmetical: " + arithmeticalMean(matrix));
+        System.out.println("Mean geometric: " + geometricMean(matrix));
     }
 }
