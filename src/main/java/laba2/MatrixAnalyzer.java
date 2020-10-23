@@ -1,10 +1,10 @@
-package com.ops;
+package laba2;
 
 import java.util.Scanner;
 
 public class MatrixAnalyzer {
-    static final int LOW = 0;
-    static final int HIGH = 10;
+    private static final int LOW = 0;
+    private static final int HIGH = 10;
 
     /// <Summary>
     /// Генерация случайных значений в диапазоне и заполнение ими маатрицы
