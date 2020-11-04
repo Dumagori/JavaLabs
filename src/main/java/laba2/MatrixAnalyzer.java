@@ -8,7 +8,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Generate random value in matrix
-    /// </Summary
+    /// </Summary>
     private static int[][] randomGenerate(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -21,7 +21,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Manual filling of matrix
-    /// </Summary
+    /// </Summary>
     private static int[][] manualFilling(int[][] matrix) {
         Scanner scanFillingMatrix = new Scanner(System.in);
         for (int i = 0; i < matrix.length; i++) {
@@ -36,7 +36,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Print matrix on screen
-    /// </Summary
+    /// </Summary>
     private static void printMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -48,7 +48,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Find max value
-    /// </Summary
+    /// </Summary>
     private static int maxValue(int[][] matrix) {
         int max = matrix[0][0];
         for (int i = 0; i < matrix.length; i++) {
@@ -64,7 +64,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Find min value
-    /// </Summary
+    /// </Summary>
     private static int minValue(int[][] matrix) {
         int min = matrix[0][0];
         for (int i = 0; i < matrix.length; i++) {
@@ -80,7 +80,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Find arithmetical mean
-    /// </Summary
+    /// </Summary>
     private static double arithmeticalMean(int[][] matrix) {
         int sum = 0;
         for (int i = 0; i < matrix.length; i++) {
@@ -97,7 +97,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Find geometric mean
-    /// </Summary
+    /// </Summary>
     private static double geometricMean(int[][] matrix) {
         int product = 1;
         for (int i = 0; i < matrix.length; i++) {
@@ -114,7 +114,7 @@ public class MatrixAnalyzer {
 
     /// <Summary>
     /// Start point
-    /// </Summary
+    /// </Summary>
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("\nEnter height: ");
