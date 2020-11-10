@@ -32,6 +32,6 @@ public class DepartmentController {
     }
 
     public void updateDepartmentView(){
-        departmentView.printDepartmentDetails(departmentModel.getDepartmentName(), departmentModel.getGroups());
+        departmentView.printDepartmentDetails(departmentModel.getDepartmentName(), departmentModel.getBoss(), departmentModel.getGroups());
     }
 }

@@ -33,6 +33,6 @@ public class FacultyController {
     }
 
     public void updateFacultyView(){
-        facultyView.printFacultyDetails(facultyModel.getFacultyName(),facultyModel.getDepartments());
+        facultyView.printFacultyDetails(facultyModel.getFacultyName(), facultyModel.getBoss(), facultyModel.getDepartments());
     }
 }

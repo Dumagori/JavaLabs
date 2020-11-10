@@ -6,6 +6,16 @@ public class Faculty extends University {
     public ArrayList<Department> departments;
     private String facultyName;
 
+    @Override
+    public Boss getBoss() {
+        return super.getBoss();
+    }
+
+    @Override
+    public void setBoss(Boss boss) {
+        super.setBoss(boss);
+    }
+
     public ArrayList<Department> getDepartments() {
         return departments;
     }

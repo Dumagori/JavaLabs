@@ -32,6 +32,6 @@ public class UniversityController {
     }
 
     public void updateUniversityView(){
-        universityView.printUniversityDetails(universityModel.getUniversityName(), universityModel.getAddress(), universityModel.getBossUniversity(), universityModel.getFaculties());
+        universityView.printUniversityDetails(universityModel.getUniversityName(), universityModel.getLocation(), universityModel.getFaculties());
     }
 }

@@ -32,6 +32,6 @@ public class GroupController {
     }
 
     public void updateGroupeView(){
-        groupView.printGroupDetails(groupModel.getGroupName(), groupModel.getStudents());
+        groupView.printGroupDetails(groupModel.getGroupNumber(), groupModel.getBoss(), groupModel.getStudents());
     }
 }

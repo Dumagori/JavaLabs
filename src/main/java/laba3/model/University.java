@@ -2,12 +2,10 @@ package laba3.model;
 
 import java.util.ArrayList;
 
-public class University {
+public class University extends UniversityBase {
 
     public ArrayList<Faculty> faculties;
-    public String address;
-    public String universityName;
-    public String bossUniversity;
+    public String location;
 
     public ArrayList<Faculty> getFaculties() {
         return faculties;
@@ -17,27 +15,11 @@ public class University {
         this.faculties = faculties;
     }
 
-    public String getBossUniversity() {
-        return bossUniversity;
+    public String getLocation() {
+        return location;
     }
 
-    public void setBossUniversity(String bossUniversity) {
-        this.bossUniversity = bossUniversity;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getUniversityName() {
-        return universityName;
-    }
-
-    public void setUniversityName(String universityName) {
-        this.universityName = universityName;
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
