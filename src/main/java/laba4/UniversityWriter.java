@@ -1,7 +1,7 @@
 package laba4;
 
 import com.google.gson.Gson;
-import laba4.model.University;
+import laba3.model.University;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -10,10 +10,6 @@ import java.util.Scanner;
 
 public class UniversityWriter {
     Gson gson;
-
-    public UniversityWriter(Gson gson){
-        this.gson=gson;
-    }
 
     public void writeToFile(University university) throws IOException{
         String univerJson = gson.toJson((university));
