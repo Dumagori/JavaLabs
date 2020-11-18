@@ -8,6 +8,7 @@ public class UniversityWriterTest {
 
     @Test
     public void testFileUniversityWriter() {
+
         UniversityWriter universityWriter = new UniversityWriter();
         ConstantBaseGenerate constantBaseGenerate = new ConstantBaseGenerate();
         University ntuOld = constantBaseGenerate.createUniversity();
