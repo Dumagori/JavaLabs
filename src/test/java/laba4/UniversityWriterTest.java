@@ -1,16 +1,20 @@
 package laba4;
 
+import laba3.model.University;
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class UniversityWriterTest {
 
     @Test
-    public void writeToFile() {
-    }
+    public void testFileUniversityWriter() {
+        UniversityWriter universityWriter = new UniversityWriter();
+        ConstantBaseGenerate constantBaseGenerate = new ConstantBaseGenerate();
+        University ntuOld = constantBaseGenerate.createUniversity();
 
-    @Test
-    public void readFromFile() {
+        universityWriter.writeToFile(ntuOld);
+        University ntuNew = universityWriter.readFromFile();
+
+        Assert.assertEquals(ntuNew.toString(), ntuOld.toString());
     }
 }

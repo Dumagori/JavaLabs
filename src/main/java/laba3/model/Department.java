@@ -5,15 +5,14 @@ import java.util.ArrayList;
 public class Department extends Faculty {
     private ArrayList<Group> groups;
     private String departmentName;
+    private Boss bossDepartment;
 
-    @Override
-    public Boss getBoss() {
-        return super.getBoss();
+    public Boss getBossDepartment() {
+        return bossDepartment;
     }
 
-    @Override
-    public void setBoss(Boss boss) {
-        super.setBoss(boss);
+    public void setBossDepartment(Boss bossDepartment) {
+        this.bossDepartment = bossDepartment;
     }
 
     public ArrayList<Group> getGroups() {

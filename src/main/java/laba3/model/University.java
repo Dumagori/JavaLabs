@@ -6,6 +6,15 @@ public class University extends UniversityBase {
 
     public ArrayList<Faculty> faculties;
     public String location;
+    public Boss bossUniversity;
+
+    public Boss getBossUniversity() {
+        return bossUniversity;
+    }
+
+    public void setBossUniversity(Boss bossUniversity) {
+        this.bossUniversity = bossUniversity;
+    }
 
     public ArrayList<Faculty> getFaculties() {
         return faculties;

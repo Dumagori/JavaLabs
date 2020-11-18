@@ -2,18 +2,17 @@ package laba3.model;
 
 import java.util.ArrayList;
 
-public class Faculty extends University {
+public class Faculty extends UniversityBase {
     public ArrayList<Department> departments;
     private String facultyName;
+    private Boss bossFaculty;
 
-    @Override
-    public Boss getBoss() {
-        return super.getBoss();
+    public Boss getBossFaculty() {
+        return bossFaculty;
     }
 
-    @Override
-    public void setBoss(Boss boss) {
-        super.setBoss(boss);
+    public void setBossFaculty(Boss bossFaculty) {
+        this.bossFaculty = bossFaculty;
     }
 
     public ArrayList<Department> getDepartments() {
