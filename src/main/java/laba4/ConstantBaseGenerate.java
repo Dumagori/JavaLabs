@@ -2,7 +2,6 @@ package laba4;
 
 import com.github.javafaker.Faker;
 
-import laba3.ColorList;
 import laba3.controller.*;
 import laba3.model.*;
 import laba3.view.*;
