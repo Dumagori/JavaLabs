@@ -1,4 +1,4 @@
-package laba6.baseController;
+package laba6.controller;
 
 import laba6.controller.CarController;
 import laba6.model.Car;

@@ -1,7 +1,7 @@
 package laba6;
 
-import laba6.baseController.WriteToBase;
-import laba6.baseController.ReadFromBase;
+import laba6.controller.WriteToBase;
+import laba6.controller.ReadFromBase;
 
 import java.util.Scanner;
 
