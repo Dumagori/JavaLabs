@@ -1,12 +1,9 @@
 package laba6.controller;
 
-import laba6.controller.CarController;
-import laba6.model.Car;
-
 import java.sql.*;
 
-public class ReadFromBase {
-    public ReadFromBase() throws ClassNotFoundException {
+public class ReadController {
+    public ReadController() throws ClassNotFoundException {
         String url = "jdbc:mysql://localhost:3306/carbase?useSSL=false";
         String userName = "root";
         String password = "01101999g400S";

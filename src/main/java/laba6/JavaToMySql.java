@@ -1,7 +1,7 @@
 package laba6;
 
-import laba6.controller.WriteToBase;
-import laba6.controller.ReadFromBase;
+import laba6.controller.WriteController;
+import laba6.controller.ReadController;
 
 import java.util.Scanner;
 
@@ -14,10 +14,10 @@ public class JavaToMySql {
 
             switch (choose){
                 case 1:
-                    ReadFromBase readFromBase = new ReadFromBase();
+                    ReadController readController = new ReadController();
                     break;
                 case 2:
-                    WriteToBase writeToBase = new WriteToBase();
+                    WriteController writeController = new WriteController();
                     break;
             }
         }
