@@ -17,7 +17,7 @@ public class UniversityWriter {
         String univerJson = gson.toJson(university);
 
         try {
-            FileWriter fileWriter = new FileWriter("univer.json");
+            FileWriter fileWriter = new FileWriter("university.json");
             fileWriter.write(univerJson);
             fileWriter.flush();
             fileWriter.close();
@@ -30,7 +30,7 @@ public class UniversityWriter {
     public University readFromFile (){
         Gson gson = new Gson();
         try{
-            return gson.fromJson(new FileReader("univer.json"), University.class);
+            return gson.fromJson(new FileReader("university.json"), University.class);
         }
         catch (FileNotFoundException e){
             e.printStackTrace();

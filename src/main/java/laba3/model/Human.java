@@ -1,6 +1,8 @@
 package laba3.model;
 import laba3.model.Sex;
 
+import java.util.Objects;
+
 abstract public class Human {
     protected String name;
     protected String surname;
@@ -37,5 +39,21 @@ abstract public class Human {
 
     public void setSex(Sex sex) {
         this.sex = sex;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return name.equals(human.name) &&
+                surname.equals(human.surname) &&
+                fathersName.equals(human.fathersName) &&
+                sex == human.sex;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, fathersName, sex);
     }
 }
